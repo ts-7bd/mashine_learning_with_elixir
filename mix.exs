@@ -24,9 +24,9 @@ defmodule MashineLearningWithElixir.MixProject do
   # Nx is a multi-dimensional tensors library for Elixir with multi-staged compilation to the CPU/GPU
   defp deps do
     [
-      {:torchx, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "torchx"},
-      {:exla, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "exla"},
-      {:nx, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "nx", override: true}
-    ]
+      # {:torchx, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "torchx"},
+      {:axon, "~> 0.1.0-dev", github: "elixir-nx/axon", branch: "main"},
+      {:exla, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "exla", override: true},
+      {:nx, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "nx", override: true}    ]
   end
 end
